@@ -1,16 +1,18 @@
 # Website Analytics Service
 
 ## Overview
+```
 This project implements a backend service to capture and analyze website analytics events. It consists of two main modules:
 
 1. **Ingestion Service** – Receives analytics events from clients and quickly stores them for processing.
 2. **Analytics Service** – Provides summarized and aggregated analytics data via APIs.
 
 The ingestion service is optimized for **high throughput** and does not block clients while writing to the database.
-
+```
 ---
 
 ## Project Structure
+```
 Backend/
 │
 ├─ ingestion/ # Module for receiving analytics events
@@ -27,14 +29,14 @@ Backend/
 ├─ README.md
 └─ package.json
 
-
+```
 ---
 
 ## Setup Instructions
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/hardikkumar4472/TJRA-Retail-Website-Analytics-Service
 cd backend
 
 npm install
@@ -70,6 +72,7 @@ node reporting/report.js
 
 ```
 API Endpoints
+```
 Ingestion Service
 POST /events
 
@@ -78,7 +81,8 @@ Body: { "eventType": "click", "userId": "123", "timestamp": "2025-11-13T00:00:00
 Stores the analytics event asynchronously.
 
 Analytics Service
-GET /summary
+GET /api/events/stats
+```
 
 Query parameters: startDate, endDate, eventType
 
