@@ -4,8 +4,8 @@
 ```
 This project implements a backend service to capture and analyze website analytics events. It consists of two main modules:
 
-1. **Ingestion Service** – Receives analytics events from clients and quickly stores them for processing.
-2. **Analytics Service** – Provides summarized and aggregated analytics data via APIs.
+1. Ingestion Service – Receives analytics events from clients and quickly stores them for processing.
+2. Analytics Service – Provides summarized and aggregated analytics data via APIs.
 
 The ingestion service is optimized for **high throughput** and does not block clients while writing to the database.
 ```
@@ -30,7 +30,7 @@ backend/
 └─ package.json
 ```
 yaml
-Copy code
+
 
 ---
 
