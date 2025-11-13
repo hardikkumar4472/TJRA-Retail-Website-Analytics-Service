@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "ingest": "node ingestion/ingestion.js",
+    "processor": "node processor/processor.js",
+    "report": "node reporting/report.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "ioredis": "^5.8.2",
+    "pg": "^8.16.3"
+  }
+}
