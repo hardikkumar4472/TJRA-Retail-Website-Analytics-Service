@@ -74,7 +74,7 @@ node reporting/report.js
 API Endpoints
 ```
 Ingestion Service
-POST /events
+POST /event
 
 Body: { "eventType": "click", "userId": "123", "timestamp": "2025-11-13T00:00:00Z", "metadata": {} }
 
