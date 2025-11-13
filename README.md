@@ -84,3 +84,30 @@ Returns summarized analytics for the requested period.
 ```
 Scripts
 npm run report – Runs the reporting script in reporting/report.js.
+
+#dotEnv Structure
+```
+# Redis
+REDIS_HOST=127.0.0.1
+REDIS_PORT=6379
+QUEUE_KEY=events_queue
+
+# Postgres
+PG_HOST=127.0.0.1
+PG_PORT=5432
+PG_DATABASE=analytics
+PG_USER=postgres
+PG_PASSWORD=
+
+# Ports
+INGEST_PORT=3000
+REPORT_PORT=4000
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD
+DB_NAME=filesure
+
+
+```
